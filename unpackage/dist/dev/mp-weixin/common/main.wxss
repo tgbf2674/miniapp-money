@@ -26,9 +26,9 @@
 /* 文章场景相关 */
 @font-face {
   font-family: "iconfont"; /* Project id 2814233 */
-  src: url('//at.alicdn.com/t/font_2814233_r26mnt355br.woff2?t=1631683942999') format('woff2'),
-       url('//at.alicdn.com/t/font_2814233_r26mnt355br.woff?t=1631683942999') format('woff'),
-       url('//at.alicdn.com/t/font_2814233_r26mnt355br.ttf?t=1631683942999') format('truetype');
+  src: url('//at.alicdn.com/t/font_2814233_m7lpg0gwamp.woff2?t=1631705563684') format('woff2'),
+       url('//at.alicdn.com/t/font_2814233_m7lpg0gwamp.woff?t=1631705563684') format('woff'),
+       url('//at.alicdn.com/t/font_2814233_m7lpg0gwamp.ttf?t=1631705563684') format('truetype');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -36,6 +36,39 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-study:before {
+  content: "\e640";
+}
+.icon-jia-copy:before {
+  content: "\e653";
+}
+.icon-shuidian:before {
+  content: "\e715";
+}
+.icon-lunch:before {
+  content: "\e600";
+}
+.icon-shejiao:before {
+  content: "\e62f";
+}
+.icon-riyongpin:before {
+  content: "\e60c";
+}
+.icon-yule:before {
+  content: "\e721";
+}
+.icon-traffic:before {
+  content: "\e613";
+}
+.icon-HousingFund:before {
+  content: "\e6c4";
+}
+.icon-qingkong:before {
+  content: "\e62b";
+}
+.icon-huitui:before {
+  content: "\e665";
 }
 .icon-clothe:before {
   content: "\e716";

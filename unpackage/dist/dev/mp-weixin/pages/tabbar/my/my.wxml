@@ -1,1 +1,1 @@
-<view>个人中心</view>
+<view><view class="container u-skeleton"><view style="margin:20px 0;"><block wx:for="{{lists}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="lists"><text class="u-skeleton-rect">{{item}}</text></view></block></view></view></view>
