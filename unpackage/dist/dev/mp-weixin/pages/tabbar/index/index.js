@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tabs = function tabs() {__webpack_require__.e(/*! require.ensure | components/tabs */ "components/tabs").then((function () {return resolve(__webpack_require__(/*! ../../../components/tabs.vue */ 45));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tags = function tags() {__webpack_require__.e(/*! require.ensure | components/tags */ "components/tags").then((function () {return resolve(__webpack_require__(/*! ../../../components/tags.vue */ 52));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var keyborad = function keyborad() {__webpack_require__.e(/*! require.ensure | components/keybord */ "components/keybord").then((function () {return resolve(__webpack_require__(/*! ../../../components/keybord.vue */ 59));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var notes = function notes() {__webpack_require__.e(/*! require.ensure | components/notes */ "components/notes").then((function () {return resolve(__webpack_require__(/*! ../../../components/notes.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
@@ -148,6 +148,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+var _vuex = __webpack_require__(/*! vuex */ 79);function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var tabs = function tabs() {__webpack_require__.e(/*! require.ensure | components/tabs */ "components/tabs").then((function () {return resolve(__webpack_require__(/*! ../../../components/tabs.vue */ 45));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tags = function tags() {__webpack_require__.e(/*! require.ensure | components/tags */ "components/tags").then((function () {return resolve(__webpack_require__(/*! ../../../components/tags.vue */ 52));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var keyborad = function keyborad() {__webpack_require__.e(/*! require.ensure | components/keybord */ "components/keybord").then((function () {return resolve(__webpack_require__(/*! ../../../components/keybord.vue */ 59));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var notes = function notes() {__webpack_require__.e(/*! require.ensure | components/notes */ "components/notes").then((function () {return resolve(__webpack_require__(/*! ../../../components/notes.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var datepick = function datepick() {__webpack_require__.e(/*! require.ensure | components/datepick */ "components/datepick").then((function () {return resolve(__webpack_require__(/*! ../../../components/datepick.vue */ 74));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -156,7 +163,11 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     tabs: tabs,
     tags: tags,
     keyborad: keyborad,
-    notes: notes },
+    notes: notes,
+    datepick: datepick },
+
+  computed: _objectSpread({},
+  (0, _vuex.mapState)(['recordList'])),
 
   data: function data() {
     return {
@@ -210,7 +221,20 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
         amount: '' } };
 
 
-  } };exports.default = _default;
+  },
+  methods: {
+    showToast: function showToast() {
+      this.$refs.uToast.show({
+        title: '已记一笔',
+        type: 'success',
+        position: 'top' });
+
+    },
+    saveRecord: function saveRecord() {
+      this.$store.commit('createRecord', this.record);
+      this.showToast();
+      this.record.notes = '已记一笔';
+    } } };exports.default = _default;
 
 /***/ }),
 /* 17 */,

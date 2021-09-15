@@ -5,6 +5,7 @@
     "tabs": "/components/tabs",
     "tags": "/components/tags",
     "keyborad": "/components/keybord",
-    "notes": "/components/notes"
+    "notes": "/components/notes",
+    "datepick": "/components/datepick"
   }
 }

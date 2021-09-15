@@ -49,6 +49,7 @@
 			flex-grow: 1;
 			display: flex;
 			align-items: center;
+			padding: 10px 0;
 		}
 		>view {
 			flex-shrink: 0;
