@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "极简记账",
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "usingComponents": {}
+}
