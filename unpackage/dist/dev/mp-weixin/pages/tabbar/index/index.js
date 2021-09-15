@@ -139,11 +139,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
 {
-  components: { tabs: tabs },
+  components: {
+    tabs: tabs },
+
   data: function data() {
     return {
-      title: '果果记账',
+      title: '极简记账',
       recordTypeList: [{
         text: '支出',
         value: '-' },
@@ -160,8 +163,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
   },
-  onLoad: function onLoad() {
-  },
+  onLoad: function onLoad() {},
   methods: {} };exports.default = _default;
 
 /***/ }),

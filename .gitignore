@@ -3,3 +3,6 @@
 /static/
 /unpackage/
 /manifest.json/
+/uview-ui/
+/node_modules/
+!/uview-ui/
