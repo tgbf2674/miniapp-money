@@ -3,7 +3,7 @@
 		<view class="content">
 			<tabs :data_source="recordTypeList" :value.sync="record.type"></tabs>
 			<tags class="tags" :iconName='iconName' :selectedTag.sync="record.tag"></tags>
-			</keybord>
+			<keyborad></keyborad>
 		</view>
 	</view>
 </template>
