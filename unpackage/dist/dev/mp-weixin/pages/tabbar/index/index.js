@@ -130,15 +130,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tabs = function tabs() {__webpack_require__.e(/*! require.ensure | components/tabs */ "components/tabs").then((function () {return resolve(__webpack_require__(/*! ../../../components/tabs.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
 {
+  components: { tabs: tabs },
   data: function data() {
     return {
       title: '果果记账',

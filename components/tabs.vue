@@ -49,6 +49,8 @@
 			border: 1px solid #303030;
 			border-radius: 5px;
 			border-collapse: collapse;
+			background-color: #FFFFFF;
+			color: #3EB575;
 			li:first-of-type {
 				width: 50vw;
 				height: 32px;

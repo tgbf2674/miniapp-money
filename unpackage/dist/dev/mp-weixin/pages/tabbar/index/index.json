@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "极简记账",
   "disableScroll": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "tabs": "/components/tabs"
+  }
 }

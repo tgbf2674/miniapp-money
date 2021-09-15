@@ -6,7 +6,9 @@
 </template>
 
 <script>
+	import tabs from "../../../components/tabs.vue"
 	export default {
+		components:{tabs},
 		data() {
 					return {
 						title: '果果记账',
