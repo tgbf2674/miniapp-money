@@ -3,6 +3,7 @@
 		<view class="content">
 			<tabs :data_source="recordTypeList" :value.sync="record.type"></tabs>
 			<tags class="tags" :iconName='iconName' :selectedTag.sync="record.tag"></tags>
+			<notes :value.sync="record.notes" field-name="备注" placeholder="请在这里输入备注"></notes>
 			<keyborad></keyborad>
 		</view>
 	</view>
@@ -12,11 +13,13 @@
 	import tabs from "../../../components/tabs.vue"
 	import tags from "../../../components/tags.vue"
 	import keyborad from "../../../components/keybord.vue"
+	import notes from "../../../components/notes.vue"
 	export default {
 		components: {
 			tabs,
 			tags,
-			keyborad
+			keyborad,
+			notes
 		},
 		data() {
 			return {

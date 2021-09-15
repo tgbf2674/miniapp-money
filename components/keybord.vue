@@ -186,12 +186,14 @@
 							background: $uni-color-warning;
 						}
 					}
+					&.ok{
 					grid-area: ok;
 					color: #fff;
 					background-color: lighten($main-color, 20%);
 					&.numChange {
 						background: $main-color;
 					}
+				}
 				}
 				&:nth-child(13) {
 					grid-area: zero;

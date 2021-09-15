@@ -4,6 +4,7 @@
   "usingComponents": {
     "tabs": "/components/tabs",
     "tags": "/components/tags",
-    "keyborad": "/components/keybord"
+    "keyborad": "/components/keybord",
+    "notes": "/components/notes"
   }
 }

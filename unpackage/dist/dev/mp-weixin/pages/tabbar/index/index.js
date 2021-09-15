@@ -135,7 +135,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tabs = function tabs() {__webpack_require__.e(/*! require.ensure | components/tabs */ "components/tabs").then((function () {return resolve(__webpack_require__(/*! ../../../components/tabs.vue */ 45));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tags = function tags() {__webpack_require__.e(/*! require.ensure | components/tags */ "components/tags").then((function () {return resolve(__webpack_require__(/*! ../../../components/tags.vue */ 52));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var keyborad = function keyborad() {__webpack_require__.e(/*! require.ensure | components/keybord */ "components/keybord").then((function () {return resolve(__webpack_require__(/*! ../../../components/keybord.vue */ 59));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tabs = function tabs() {__webpack_require__.e(/*! require.ensure | components/tabs */ "components/tabs").then((function () {return resolve(__webpack_require__(/*! ../../../components/tabs.vue */ 45));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tags = function tags() {__webpack_require__.e(/*! require.ensure | components/tags */ "components/tags").then((function () {return resolve(__webpack_require__(/*! ../../../components/tags.vue */ 52));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var keyborad = function keyborad() {__webpack_require__.e(/*! require.ensure | components/keybord */ "components/keybord").then((function () {return resolve(__webpack_require__(/*! ../../../components/keybord.vue */ 59));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var notes = function notes() {__webpack_require__.e(/*! require.ensure | components/notes */ "components/notes").then((function () {return resolve(__webpack_require__(/*! ../../../components/notes.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
 
 
 
@@ -153,7 +155,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   components: {
     tabs: tabs,
     tags: tags,
-    keyborad: keyborad },
+    keyborad: keyborad,
+    notes: notes },
 
   data: function data() {
     return {
